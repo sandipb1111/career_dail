@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -26,7 +28,7 @@
                            
                         </ul>
 
-                   <button><a href="Register.html">Sign in</a></button>
+                   <button><a href="register.html">Sign in</a></button>
             </nav>
             <!-- Header-->
             <header >

@@ -24,7 +24,7 @@ function validateLoginForm() {
 		return false;
 	}
 	else {
-		alert("Successfully logged in");
+	
 		return true;
 	}
 }
@@ -49,7 +49,6 @@ function validateSignupForm() {
 		return false;
     }
 	else {
-		alert("Successfully signed up");
 		return true;
 	}
 }

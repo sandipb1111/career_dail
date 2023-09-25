@@ -1,3 +1,6 @@
+<?php  include("login.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,19 +19,23 @@
       <div class="forms-container">
 
         <div class="signin-signup">
-          <form action="#" class="sign-in-form" name="myForm" onsubmit = "return(validateLoginForm());">
+          <form action="login.php" method = "post" class="sign-in-form" name="myForm" >
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" id="logName" />
+              <input type="text" name ="username" placeholder="Username" id="logName" />
             </div>
+            <?php
+            if(isset ($_GET["error"])){?>
+              <span id="errorMsg"><?php echo $_GET["error"] ?></span>
+           <?php }?>
             <span id="errorMsg"></span>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" id="logPassword"/>
-            </div>
+              <input type="password" name = "password" placeholder="Password" id="logPassword" />
+            </div> 
             <span id="errorMsg"></span>
-            <input type="submit" value="Log in" class="btn solid" />
+            <input type="submit" name = "login"  class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -45,25 +52,25 @@
               </a>
             </div>
           </form>
-          <form action="#" class="sign-up-form" onsubmit="return(validateSignupForm());">
+          <form action="login.php" method="post" class="sign-up-form"  >
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" id="signName" />
+              <input type="text" name ="signName" placeholder="Username" id="signName" />
             </div> <span id="errorMsgs"></span>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" id="signEmail" />
+              <input type="email" name = "signEmail"placeholder="Email" id="signEmail" />
             </div> <span id="errorMsgs"></span>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" id="signPassword"/>
+              <input type="password" name="signPassword"placeholder="Password" id="signPassword"/>
             </div> <span id="errorMsgs"></span>
             <div class="input-field">
                 <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Confirm Password" id="signConfPassword"/>
+            <input type="password"name="signConfPassword" placeholder="Confirm Password" id="signConfPassword"/>
         </div> <span id="errorMsgs"></span>
-            <input type="submit" class="btn" value="Sign up" />
+            <input type="submit" class="btn" name = "registration" />
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
