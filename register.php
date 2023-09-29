@@ -11,9 +11,22 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <title>Sign in & Sign up Form</title>
   </head>
   <body>
+  <nav class="nav-bar">
+                    <div class="navbar-brand"><b>CAREER DIAL</b></div>
+                   
+                        
+                        <ul class="nav-links_lists">
+                            <li class="nav-link"><a class="link" style="color=black;" href="index.html">HOME</a></li>
+                            <li class="nav-link"><a class="link" style="color=black;" href="about.html">ABOUT</a></li>
+                            <li class="nav-link"><a class="link" style="color=black;" href="about.html">VACANCIES</a></li>
+                        </ul>
+
+                   <button onclick="document.location='register.php'">SIGN IN</button>
+            </nav>
     <div class="container">
        
       <div class="forms-container">

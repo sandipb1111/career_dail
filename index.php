@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,25 +11,28 @@
         <title>Career Dial</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-    
+        <!-- swiperjs-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles1.css" rel="stylesheet" />
+        <link href="css/nav.css" rel="stylesheet" />
+       
     </head>
     <body >
         <main >
             <!-- Navigation-->
             <nav class="nav-bar">
-                    <a class="navbar-brand" href="index.html">Career Dial</a>
+                    <div class="navbar-brand"><b>CAREER DIAL</b></div>
                    
-                        
-                        <ul class="nav-links lists">
-                            <li class="nav-link"><a class="" href="index.html">Home</a></li>
-                            <li class="nav-link"><a class="" href="about.html">About</a></li>
-                           
+                        <ul class="nav-links_lists">
+                            <li class="nav-link"><a class="link" style="color=black;" href="index.html">HOME</a></li>
+                            <li class="nav-link"><a class="link" style="color=black;" href="about.html">ABOUT</a></li>
+                            <li class="nav-link"><a class="link" style="color=black;" href="about.html">VACANCIES</a></li>
                         </ul>
 
-                   <button><a href="Register.html">Sign in</a></button>
+                   <button onclick="document.location='register.php'">SIGN IN</button>
             </nav>
             <!-- Header-->
             <header >
@@ -35,171 +41,168 @@
                     
                             <div class="box1">
                                 <h1 >Career Choices At Your Fingertips</h1>
-                                <p >Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit!</p>
+                                <p >Empowering students in career planning, development, and ongoing guidance. Aiming to prevent ill-suited career choices.</p>
                                 <div >
-                                    <button><a class="link" href="#features">Get Started</a></button>
+                                    <button>GET STARTED</button>
                                     
                                 </div>
                             </div>
-                        <div class="box2"><img class="img-fluid rounded-3 my-5" src="assets/CareerPhoto.png" alt="..." /></div>
+                        <div class="box2"><img class="img-fluid rounded-3 my-5" src="img/img1.png" alt="..." /></div>
                     
                 </div>
                 </div>
             </header>
-            <!-- Features section-->
-            <section class="" id="features">
-                <div class=" ">
-                    <div class="">
-                        <div class=""><h2 class="">A better way to start building.</h2></div>
-                        <div class="">
-                            <div class="">
-                                <div class="">
-                                    <div class=""><i class=""></i></div>
-                                    <h2 class="">Featured title</h2>
-                                    <p class="">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="">
-                                    <div class=""><i class=""></i></div>
-                                    <h2 class="">Featured title</h2>
-                                    <p class="">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class=" ">
-                                    <div class=""><i class=""></i></div>
-                                    <h2 class="">Featured title</h2>
-                                    <p class="">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="">
-                                    <div class=""><i class=""></i></div>
-                                    <h2 class="">Featured title</h2>
-                                    <p class="">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                            </div>
-                        </div>
+            <!--Skills Description-->
+            <section class="skills_content">
+                <div class="content">
+                    <div class="skills-desc">
+                        <h2>Never Stop Learning, Never Stop Advancing.
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fuga aperiam error ratione enim eaque at, totam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="grid">
+                    <div class="row1">
+                        <div class="C-11">
+                            <div class="skill_img"><img src="icons/php.png"></div>PHP</div>
+                        <div class="C-11"><div class="skill_img"><img src="icons/css.png"></div>CSS</div>
+                        <div class="C-11"><div class="skill_img"><img src="icons/photoshop.png"></div>PHOTOSHOP</div>
+                    </div>
+                    <div class="row2">
+                        <div class="C-11"><div class="skill_img"><img src="icons/react.png"></div>REACT</div>
+                        <div class="C-11"><div class="skill_img"><img src="icons/node.png"></div>NODE JS</div>
+                        <div class="C-11"><div class="skill_img"><img src="icons/py.png"></div>PYTHON</div>
+                    </div>
                     </div>
                 </div>
+            <!--Vacancies-->
             </section>
-            <!-- Testimonial section-->
-            <div class="">
-                <div class=" ">
-                    <div class=" r">
-                        <div class="">
-                            <div class="">
-                                <div class="">"Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"</div>
-                                <div class="">
-                                    <img class="" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                    <div class="">
-                                        Tom Ato
-                                        <span class="f">/</span>
-                                        CEO, Pomodoro
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <section class="vacancies">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide content"> 
+                
+                    <div class="vacancies_photo"><img src="img/vacancy.jpg" alt="-----"></div>
+                    <div class="desc">
+                    <h2 class="Title">Hiring Designer!!</h2>
+                    
+                    <p class="summary">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Atque cumque omnis quibusdam animi dignissimos tenetur quis, non nobis inventore sint aut dolores explicabo officiis laborum eius 
+                        ex voluptate necessitatibus nulla.</p>
+                        <div class="vac_info">
+                    <h3 >Job Category:</h3>  
+                    <p class="Job Category">Designer</p></div>
+                    <div class="vac_info">
+                    <h3>Position:</h3>
+                    <p class="Position">Junior</p></div>
+                    <div class="vac_info">
+                    <h3>Experience Needed:</h3>
+                    <p class="Experience">1 year</p></div>
+                    <div class="vac_info">
+                    <h3>Location:</h3>
+                    <p class="Experience">Kathmandu</p></div>
+                    <div class="vac_info">
+                    <h3>Schedule:</h3>
+                    <p class="Experience">Full Time</p></div>
+                    <div class="vac_info">
+                    <h3>Skills:</h3>
+                    <div class="Set-skills">
+                    <div class="skills">Adobe</div> <div class="skills">Procreate</div></div>
                     </div>
+                    <div class="vac_info">
+                    <h3>Valid Date:</h3>
+                    <p class="valid-date">2080/07/14</p></div>
+                    <button class="more-details">MORE DETAILS</button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide content">
+                    <div class="vacancies_photo"><img src="img/vac2.png" alt="-----"></div>
+                    <div class="desc">
+                    <h2 class="Title">Hiring Flutter Developer!!</h2>
+                    
+                    <p class="summary">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Atque cumque omnis quibusdam animi dignissimos tenetur quis, non nobis inventore sint aut dolores explicabo officiis laborum eius 
+                        ex voluptate necessitatibus nulla.</p>
+                        <div class="vac_info">
+                    <h3 >Job Category:</h3>  
+                    <p class="Job Category">Developer</p></div>
+                    <div class="vac_info">
+                    <h3>Position:</h3>
+                    <p class="Position">Senior</p></div>
+                    <div class="vac_info">
+                    <h3>Experience Needed:</h3>
+                    <p class="Experience">3 year</p></div>
+                    <div class="vac_info">
+                    <h3>Location:</h3>
+                    <p class="Experience">Kathmandu</p></div>
+                   
+                    <div class="vac_info">
+                    <h3>Schedule:</h3>
+                    <p class="Experience">Full Time</p></div>
+                    <div class="vac_info">
+                    <h3>Skills:</h3>
+                    <div class="Set-skills">
+                    <div class="skills">Dart</div> <div class="skills">Flutter</div> <div class="skills">Hive</div></div>
+                    </div>
+                    <div class="vac_info">
+                    <h3>Valid Date:</h3>
+                    <p class="valid-date">2080/07/24</p></div>
+                    <button class="more-details">MORE DETAILS</button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide content">
+                    
+                    <div class="vacancies_photo"><img src="img/vac3.png" alt="-----"></div>
+                    <div class="desc">
+                    <h2 class="Title">Hiring Fullstack Developer!!</h2>
+                    
+                    <p class="summary">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Atque cumque omnis quibusdam animi dignissimos tenetur quis, non nobis inventore sint aut dolores explicabo officiis laborum eius 
+                        ex voluptate necessitatibus nulla.</p>
+                        <div class="vac_info">
+                    <h3 >Job Category:</h3>  
+                    <p class="Job Category">Fullstack developer</p></div>
+                    <div class="vac_info">
+                    <h3>Position:</h3>
+                    <p class="Position">Senior</p></div>
+                    <div class="vac_info">
+                    <h3>Experience Needed:</h3>
+                    <p class="Experience">3 year</p></div>
+                    <div class="vac_info">
+                    <h3>Location:</h3>
+                    <p class="Location">Kathmandu</p></div>
+                    <div class="vac_info">
+                    <h3>Schedule:</h3>
+                    <p class="Time">Full Time</p></div>
+                    <div class="vac_info">
+                    <h3>Skills:</h3>
+                    <div class="Set-skills">
+                    <div class="skills">Laravel</div> <div class="skills">MySql</div></div>
+                    </div>
+                    <div class="vac_info">
+                    <h3>Valid Date:</h3>
+                    <p class="valid-date">2080/07/14</p></div>
+                    <button class="more-details">MORE DETAILS</button>
+                    </div>
+                  </div>
+                  
                 </div>
-            </div>
-            <!-- Blog preview section-->
-            <section class="">
-                <div class=" my-5">
-                    <div class=" r">
-                        <div class=" -xl-6">
-                            <div class="text-center">
-                                <h2 class="er">From our blog</h2>
-                                <p class="lead fw-normal  mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="">
-                            <div class="">
-                                <img class="" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
-                                <div class="">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!">< class="card-title mb-3">Blog post title</></a>
-                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="">
-                                    <div class="">
-                                        <div class="">
-                                            <img class="" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="">
-                                                <div class="">Kelly Rowan</div>
-                                                <div class="">March 12, 2023 &middot; 6 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="">
-                                <img class="" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
-                                <div class="">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!">< class="card-title mb-3">Another blog post title</></a>
-                                    <p class="card-text ">This text is a bit longer to illustrate the adaptive height of each card. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="">
-                                    <div class="">
-                                        <div class="">
-                                            <img class="" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="">
-                                                <div class="">Josiah Barclay</div>
-                                                <div class="">March 23, 2023 &middot; 4 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="">
-                                <img class="" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." />
-                                <div class="">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!">< class="card-title mb-3">The last blog post title is a little bit longer than the others</></a>
-                                    <p class="card-text ">Some more quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="">
-                                    <div class="">
-                                        <div class="">
-                                            <img class="" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="">
-                                                <div class="">Evelyn Martinez</div>
-                                                <div class="">April 2, 2023 &middot; 10 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Call to action-->
-                    <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
-                        <div class="">
-                            <div class="mb-4 mb-xl-0">
-                                <div class="fs-3  text-white">New products, delivered to you.</div>
-                                <div class="text-white-50">Sign up for our newsletter for the latest updates.</div>
-                            </div>
-                            <div class="ms-xl-4">
-                                <div class="input-group mb-2">
-                                    <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
-                                    <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up</button>
-                                </div>
-                                <div class=" text-white-50">We care about privacy, and will never share your data.</div>
-                            </div>
-                        </div>
-                    </aside>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
             </section>
         </main>
         <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
+        <footer >
             <div class="">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="-auto"><div class=" m-0 text-white">Copyright &copy; Your Website 2023</div></div>
+                <div class="">
                     <div class="-auto">
-                        <a class="" href="#!">Privacy</a>
+                        <div class=" firstline">Copyright &copy; Your Website 2023</div>
+                    </div>
+                    <div class="-auto">
+                        <a class="secondLine" href="#!">Privacy</a>
                         <span class="text-white mx-1">&middot;</span>
                         <a class="" href="#!">Terms</a>
                         <span class="text-white mx-1">&middot;</span>
@@ -208,9 +211,28 @@
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JS-->
-        <script src=""></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+         <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10000,
+      effect: "fade",
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
     </body>
 </html>
