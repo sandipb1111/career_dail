@@ -162,7 +162,7 @@
                         ex voluptate necessitatibus nulla.</p>
                         <div class="vac_info">
                     <h3 >Job Category:</h3>  
-                    <p class="Job Category">Fullstack developer</p></div>
+                    <p class="JobCategory">Fullstack developer</p></div>
                     <div class="vac_info">
                     <h3>Position:</h3>
                     <p class="Position">Senior</p></div>
